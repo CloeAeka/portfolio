@@ -1,0 +1,23 @@
+var original_img_url = "http://localhost/wordpress3/wp-content/uploads/2021/03/cropped-cropped-logo-VS-lifestyle-466x129.jpg";
+var replacing_image_url = "http://localhost/wordpress3/wp-content/uploads/2021/03/logo-reflexo-300x79.jpg";
+
+jQuery('img[src="'+original_img_url+'"]').each(function(){
+jQuery(this).attr('src', replacing_image_url);
+jquery(this).attr('srcset', '');
+})
+
+jQuery('img[src="'+original_img_url+'"]').each(function(){
+console.log(jQuery(this));
+})
+
+
+
+var original_img_url = "http://localhost/wordpress3/wp-content/uploads/2021/03/cropped-cropped-logo-VS-lifestyle-466x129.jpg";
+var replacing_image_url = "http://localhost/wordpress3/wp-content/uploads/2021/03/logo-reflexo-300x79.jpg";
+let toto = 'img[src="'+original_img_url+'"]';
+let logo = document.querySelectorAll(toto);
+for (var i = 0; i < logo.length; i++) {
+logo[i].attributes.src.value = replacing_image_url;
+logo[i].removeAttribute('srcset');
+logo[i].removeAttribute('sizes');
+}

@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "portfolio": "sass --no-source-map --watch ./main.scss:./style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
