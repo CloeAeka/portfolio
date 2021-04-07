@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Progress Bar</title>
+            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        </head>
+
+
+        <body>
+            <!--<div class="cookie-consent-banner">
+                <div class="cookie-consent-banner__inner">
+                  <div class="cookie-consent-banner__copy">
+                    <div class="cookie-consent-banner__header">THIS WEBSITE USES COOKIES</div>
+                    <div class="cookie-consent-banner__description">We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. You consent to our cookies if you continue to use our website.</div>
+                  </div>
+              
+                  <div class="cookie-consent-banner__actions">
+                    <a href="#" class="cookie-consent-banner__cta">
+                      OK
+                    </a>
+                    
+                    <a href="#" class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary">
+                      Decline
+                    </a>
+                  </div>
+                </div>
+              </div>-->
+
+
+
+
+            <p>Enable or disable caps lock :</p>
+            <input id="input">
+            <p id="warning">⚠ Caps Lock is activated...</p>
+
+            <script type="text/javascript" src="main.js"></script>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+            <script>
+            window.cookieconsent.initialise({
+              "palette": {
+                "popup": {
+                  "background": "#eb6c44",
+                  "text": "#ffffff"
+                },
+                "button": {
+                  "background": "#f5d948"
+                }
+              },
+              "content": {
+                "message": " Ce site utilise des cookies pour vous offrir le meilleur service. En poursuivant votre navigation, vous acceptez l’utilisation des cookies. ",
+                "dismiss": "Ok"
+              }
+            });
+            </script>
+        </body>
+</html>

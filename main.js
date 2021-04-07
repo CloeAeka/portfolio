@@ -9,24 +9,75 @@ let doc = document.querySelector('header');
 doc.style.height = hauteur+"px";
 }
 
+//anim titre portfolio
+const logo = document.querySelectorAll("#logo #Calque_2-2 path");
+console.log(logo);
+for(let i = 0; i<logo.length; i++){
+ console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 
+}
 
-  /* function titlepath(path,name){
-
-        //In this path defined as your pdf url and name (your pdf name)
-
-            var prntWin = window.open();
-            prntWin.document.write("<html><head><title>"+name+"</title></head><body>"
-                + '<embed width="100%" height="100%" name="plugin" src="'+ path+ '" '
-                + 'type="application/pdf" internalinstanceid="21"></body></html>');
-            prntWin.document.close();
-        }
-        */
-        $(document).ready(function(){
+//CARROUSSEL
+$(document).ready(function(){
       
-       
+        //carrousel photos
+        $('#carousel').slick({      
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 4,
+          arrows:true,
+          responsive: [
+            {breakpoint: 1270,
+              settings: {arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3}
+            },
+            {breakpoint: 768,
+              settings: {arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2}
+            },
+            {breakpoint: 326,
+              settings: {arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1}
+            }
+          ]
+        });
 
-        $('#carousel').slick({
+        //caroussel print
+        $('#carousel2').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          arrows:true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        
+        //carrousel Illustrations
+        $('#carousel3').slick({
           centerMode: true,
           centerPadding: '60px',
           slidesToShow: 3,
@@ -53,4 +104,104 @@ doc.style.height = hauteur+"px";
           ]
         });
 
+        //carrousel sites web
+        $('#carousel4').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 2,
+          arrows:true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+
+        //carrousel maquettes
+        $('#carousel5').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 3,
+          arrows:true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+
+        //carrousel infographie
+        $('#carousel6').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 2,
+          arrows:true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+
       });
+
+//CAP LOCK
+var input = document.querySelector(".cap");
+var text = document.getElementById("warning");
+document.addEventListener("keyup", function(event) {
+  
+if (event.getModifierState("CapsLock")) {
+text.style.display = "block";
+} else {
+text.style.display = "none"
+}
+});
+
+
+
+    

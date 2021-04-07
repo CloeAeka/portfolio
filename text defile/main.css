@@ -1,0 +1,26 @@
+body{
+    color: rgb(255, 255, 255);
+    background-color: rgb(218, 26, 26);
+    }
+
+.element{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    }
+
+.element .text{
+    display: inline;
+    }
+      
+.test {
+      font-size: 3em;
+      text-align: right;
+      width: 850px;
+     }
