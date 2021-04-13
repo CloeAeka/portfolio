@@ -86,7 +86,14 @@ h1, h2, p, .titre{
 }
 //FIN animation SVG
 
-
+.parallax {
+  background-image: url("./image/fleur.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 a{
   text-decoration: none;
@@ -119,7 +126,12 @@ h1, h2 {
     font-size: 50px;
     color: #7e7c7c;
     font-family: "Cocogoose", 'Segoe UI', 'Lato', Tahoma, 'Geneva';
-    text-shadow: 2px 0px #ffffff, 
+    text-shadow: 2px 0px #ffffff;
+
+  }
+
+  h2 {
+    padding-bottom: 30px;
   }
 
 .titreheader {
@@ -250,7 +262,7 @@ h1, h2 {
 }
 
 
-.image:hover {
+.image:hover .slick-listdraggable:hover {
   box-shadow: 0 0 2px 1px black;
 }
 
@@ -296,6 +308,10 @@ h1, h2 {
   font-size: 20px;
 }
 
+.titreabout{
+  color: #7e7c7c;
+}
+
 .allicons {
   width: 80%;
   justify-content: space-between ;
@@ -305,12 +321,14 @@ h1, h2 {
 .titrecarrousel {
   text-shadow: 1px 1px 2px black;
   justify-content: start;
-  color: rgb(182, 213, 221);
   font-size: 50px;
-  padding: 50px;
+  padding: 50px 0 20px 50px;
+  font-family: "lato";
 }
 
-
+.little {
+  padding-left: 50px;
+}
 
 .carousel img {
   width: 350px;
@@ -361,8 +379,8 @@ label {
 }
 
 .formulaire {
-  height: 500px;
-  width: 300px;
+  height: 600px;
+  width: 400px;
 }
 
 .titrefooter {

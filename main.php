@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="icon" type="images/logo" sizes="20x20" href="./maquette/logo cloé.png">
     <title>Portfolio Cloé</title>
     
 </head>
@@ -47,7 +48,7 @@
             </div> 
 
             <div class="cv">
-                <button type="button" class="buttoncv"><a href="image/CVweb.pdf" target="_blank">Télécharger mon CV</a></button>
+                <button type="button" class="buttoncv"><a href="./image/CVweb.pdf" target="_blank">Télécharger mon CV</a></button>
         </div>
     </header>
 
@@ -58,31 +59,31 @@
         <div>
             <div class="flex-container">
                 <div class="flex-item-photos">
-                    <div><a href="#ancrephoto"><img src="image/nuage.jpg" alt="ciel nuage" class="image" ></a></div>
+                    <div><a href="#ancrephoto"><img src="./image/nuage.jpg" alt="ciel nuage" class="image" ></a></div>
                     <div class="titre">PHOTOS</div>
                 </div>
 
                 <div class="flex-item-print">
-                    <div><a href="#ancreprint"><img src="print/carte visite.jpg" alt="carte de visite" class="image"></a></div>
+                    <div><a href="#ancreprint"><img src="./print/carte visite.jpg" alt="carte de visite" class="image"></a></div>
                     <div class="titre">PRINT</div>
                 </div>
 
                 <div class="flex-item-illustration">
-                    <div><a href="#ancreillustration"><img src="image/vase.jpg" alt="paint" class="image"></a></div>
-                    <div class="titre">ILLUSTRATION</div>
+                    <div><a href="#ancrelogo"><img src="./image/vase.jpg" alt="paint" class="image"></a></div>
+                    <div class="titre">LOGO</div>
                 </div>
 
                 <div class="flex-item-siteweb">
-                    <div><a href="#ancresiteweb"><img src="site/Home page uinity.jpg" alt=" siteweb" class="image"></a></div>
+                    <div><a href="#ancresiteweb"><img src="./site/Home page uinity.jpg" alt=" siteweb" class="image"></a></div>
                     <div class="titre">SITES WEB</div>
                 </div>
 
                 <div class="flex-item-projets">
-                    <div><a href="#ancremaquette"><img src="image/home page site VS.jpg" alt="newsletter" class="image"></a></div>
+                    <div><a href="#ancremaquette"><img src="./image/home page site VS.jpg" alt="newsletter" class="image"></a></div>
                     <div class="titre">MAQUETTES</div>
                 </div>
                 <div class="flex-item-infographie">
-                    <div><a href="#ancreinfographie"><img src="image/coming soon site.jpg" alt="infographie" class="image"></a></div>
+                    <div><a href="#ancreinfographie"><img src="./image/coming soon site.jpg" alt="infographie" class="image"></a></div>
                     <div class="titre">INFOGRAPHIES</div>
                 </div>
             </div>
@@ -91,59 +92,60 @@
 
         <!--début séparateur-->
         <div class="separateur"></div>
-        <div><img  src="image/nuage plan.jpg" alt="ciel montagne" class="imagecover"></div>
+        <div class="parallax"></div>
         <!--fin séparateur-->
 
         <!--about me et compétence-->
         <div class="aboutme">
             <strong><p class="titreabout"> About me </p></strong>
-            <p class="paraabout"> En pleine reconversion professionelle, je découvre le monde du numérique.</p>
+            <p class="paraabout"> En pleine reconversion professionelle, je découvre le monde du numérique. Je suis passionée par la création sous ses différentes formes et j'ai hâte de pouvoir collaborer avec cet univers. Je suis curieuse, volontaire, et motivée. J'assure une veille technologique, j'aime la photographie et la vidéo, et j'ai des notions de community manager.</p>
             
         </div>
 
         <div class="competences">
             <strong><p class="compet"> Compétences </p></strong>
                 <div class="allicons">
-                    <img src="icons/photoshop.png" alt="icon photoshop" wight="50" height="50">
-                    <img src="icons/illustrator.png" alt="icon ai" wight="50" height="50">
-                    <img src="icons/adobexd.png" alt="icon xd" wight="50" height="50">
-                    <img src="icons/html.png" alt="icon html" wight="50" height="50">
-                    <img src="icons/css.png" alt="icon css" wight="50" height="50">
-                    <img src="icons/javascript.png" alt="icon javascript" wight="50" height="50">
-                    <img src="icons/wordpress.png" alt="icon wp" wight="50" height="50">
-                    <img src="icons/bootstrap.png" alt="icon bootstrap" wight="50" height="50">
+                    <img src="./icons/photoshop.png" alt="icon photoshop" wight="50" height="50">
+                    <img src="./icons/illustrator.png" alt="icon ai" wight="50" height="50">
+                    <img src="./icons/adobexd.png" alt="icon xd" wight="50" height="50">
+                    <img src="./icons/html.png" alt="icon html" wight="50" height="50">
+                    <img src="./icons/css.png" alt="icon css" wight="50" height="50">
+                    <img src="./icons/javascript.png" alt="icon javascript" wight="50" height="50">
+                    <img src="./icons/wordpress.png" alt="icon wp" wight="50" height="50">
+                    <img src="./icons/bootstrap.png" alt="icon bootstrap" wight="50" height="50">
                 </div>
         </div>
         <!--fin about me et compétence-->
 
         <strong><p id="ancrephoto" class="titrecarrousel"> Photos</p></strong>
+        <p class="little">Photos prises en argentic, appareil Canon</p>
 
         <!--carrousel PHOTOS-->
         
         <div id="carousel" class="carousel">
 
             <div class="hideLeft">
-                 <img class="imgcarrousel" src="image/rue de zermatt.jpg" alt="rue zermatt">
+                 <img class="imgcarrousel" src="./image/rue de zermatt.jpg" alt="rue zermatt">
             </div>
 
             <div class="prevLeftSecond">
-                <img class="imgcarrousel" src="image/chapelle schwarzsee.jpg" alt="chapelle schwartzsee zermatt">
+                <img class="imgcarrousel" src="./image/chapelle schwarzsee.jpg" alt="chapelle schwartzsee zermatt">
             </div>
 
             <div class="prev ">
-                <img class="imgcarrousel " src="image/ciel et terre.jpg" alt="ciel nature">
+                <img class="imgcarrousel " src="./image/ciel et terre.jpg" alt="ciel nature">
             </div>
 
             <div class="selected">
-                <img class="imgcarrousel" src="image/vue matterhorn.jpg" alt="vue matterhorn">
+                <img class="imgcarrousel" src="./image/vue matterhorn.jpg" alt="vue matterhorn">
             </div>
 
             <div class="next">
-               <img class="imgcarrousel" src="image/train paysage.jpg" alt="train paysage">
+               <img class="imgcarrousel" src="./image/train paysage.jpg" alt="train paysage">
             </div>
 
             <div class="hideRight">
-                <img class="imgcarrousel" src='image/zermatt maison.jpg' alt="maison zermatt">
+                <img class="imgcarrousel" src='./image/zermatt maison.jpg' alt="maison zermatt">
             </div>
 
         </div>
@@ -152,126 +154,132 @@
         <!--fin carrousel photos-->
 
         <strong><p id="ancreprint" class="titrecarrousel"> Print</p></strong>
-        
+        <p class="little">Flyers, carte de visite, bon cadeau...</p>
+
         <!--carrousel PRINT-->
         
         <div id="carousel2" class="carousel">
 
             <div class="hideLeft">
-                <img class="imgcarrousel" src="print/bon cadeau.png" alt="bon cadeau reflexo">
+                <img class="imgcarrousel" src="./print/flyer reflexo.jpg" alt="bon cadeau reflexo">
             </div>
 
             <div class="prevLeftSecond">
-                <img class="imgcarrousel" src="print/carte visite.jpg" alt="carte visite reflexo">
+                <img class="imgcarrousel" src="./print/carte visite.jpg" alt="carte visite reflexo">
             </div>
 
             <div class="prev">
-                <img class="imgcarrousel" src=".jpg" alt='flyer reflexologie'>
+                <img class="imgcarrousel" src="./print/bon cadeau.jpg" alt='flyer reflexologie'>
             </div>
 
         </div>
 
         <!--fin carrousel print-->
 
-        <strong><p id="ancreillustration" class="titrecarrousel"> Illustrations</p></strong>
+        <strong><p id="ancrelogo" class="titrecarrousel"> Logo</p></strong>
+        <p class="little">Logos réalisés sous Illustrator</p>
 
-<!--carrousel ILLUSTRATION-->
+<!--carrousel LOGO-->
 
         <div id="carousel3" class="carousel">
 
             <div class="hideLeft">
-                <img class="imgcarrousel" src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+                <img class="./imgcarrousel" src="image/logo orbit.jpg" alt="logo orbit">
             </div>
 
             <div class="prevLeftSecond">
-                <img class="imgcarrousel" src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+                <img class="./imgcarrousel" src="image/logo tropicfish.jpg" alt="logo tropical fish">
             </div>
 
             <div class="prev">
-                <img class="imgcarrousel" src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+                <img class="./imgcarrousel" src="image/logo coffee.jpg" alt="logo gear and coffee">
             </div>
 
             <div class="selected">
-                <img class="imgcarrousel" src="https://i1.sndcdn.com/artworks-000062423439-lf7ll2-t500x500.jpg">
+                <img class="./imgcarrousel" src="image/logo digiteco.jpg" alt="logo digital eco">
             </div>
 
             <div class="next">
-                <img class="imgcarrousel" src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+                <img class="./imgcarrousel" src="image/logo contact.jpg" alt="logo contact">
             </div>
 
+            <!--
             <div class="nextRightSecond">
-                <img class="imgcarrousel" src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+                <img class="imgcarrousel" src=".jpg">
             </div>
 
             <div class="hideRight">
-                <img class="imgcarrousel" src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
-            </div>
+                <img class="imgcarrousel" src=".jpg">
+            </div>-->
 
         </div>
 
 
-<!--fin carrousel illustrations-->
+<!--fin carrousel logo-->
 
-<strong><p id="ancresiteweb" class="titrecarrousel"> Sites Web</p></strong>
+<strong><p id="ancresiteweb" class="titrecarrousel">Sites Web</p></strong>
+<p class="little">Sites réalisés avec Wordpress et Boostrap.</p>
 
 <!--carrousel SITEWEB-->
 
         <div id="carousel4" class="carousel">
 
             <div class="hideLeft">
-                <img class="imgcarrousel" src="site/home page VS.jpg" alt="home page" a href="">
+                <img class="imgcarrousel" src="./site/home page VS.jpg" alt="home page">
             </div>
 
             <div class="prevLeftSecond">
-                <img class="imgcarrousel" src="site/Home page uinity.jpg" alt="home page" a href="">
+                <a href="https://cloed.promo-57.codeur.online/Bootstrap/" target="_blank"><img class="imgcarrousel" src="./site/Home page uinity.jpg" alt="home page" ></a>
             </div>
 
         </div>
 
 <!--fin carrousel sitesweb-->
 
-<strong><p id="ancremaquette" class="titrecarrousel"> Maquettes</p></strong>
+<strong><p id="ancremaquette" class="titrecarrousel">Maquettes</p></strong>
+<p class="little">Maquettes réalisées sur Photoshop.</p>
 
 <!--carrousel maquettes-->
 
         <div id="carousel5" class="carousel">
 
             <div class="prevLeftSecond">
-               <img class="imgcarrousel" src="maquette/Home page.jpg" alt="maquette home vivezsrilankais">
+               <img class="imgcarrousel" src="./maquette/Home page.jpg" alt="maquette home vivezsrilankais">
             </div>
                 
             <div class="prev">
-               <img class="imgcarrousel" src="maquette/newsletter.jpg" alt="maquette newsletter">
+               <img class="imgcarrousel" src="./maquette/newsletters.jpg" alt="maquette newsletter">
             </div>
                 
             <div class="selected">
-               <img class="imgcarrousel" src="maquette/desktop digital eco.jpg" alt=" maquette home digitaleco">
+               <img class="imgcarrousel" src="./maquette/maquettes diteco.jpg" alt=" maquette home digitaleco">
             </div>
 
             <div class="next">
-                <img class="imgcarrousel" src="maquette/digital eco desktop blog.jpg" alt="maquette blog digitaleco">
+                <img class="imgcarrousel" src="./maquette/maquette cuda.jpg" alt="">
             </div>
  
             <div class="nextRightSecond">
-                <img class="imgcarrousel" src="maquette/reflexologie site.jpg" alt="maquette reflexologie">
+                <img class="imgcarrousel" src="./maquette/reflexologie site.jpg" alt="maquette reflexologie">
             </div>
 
         </div>
 
 <!--fin carrousel maquettes-->
 
-<strong><p id="ancreinfographie" class="titrecarrousel"> Infographie</p></strong>
+<strong><p id="ancreinfographie" class="titrecarrousel">Infographie</p></strong>
+<p class="little">Infographies animées</p>
 
 <!--carrousel infographie-->
 
         <div id="carousel6" class="carousel">
 
             <div class="hideRight">
-                <img class="imgcarrousel" src="infographie/coming soon astro.gif" alt="infographie animee">
+                <img class="imgcarrousel" src="./infographie/coming soon astro.gif" alt="infographie animee">
             </div>
 
             <div class="hideLeft">
-                <img class="imgcarrousel" src="infographie/coming soon papercraft.gif"alt="infographie animee" >
+                <img class="imgcarrousel" src="./infographie/coming soon papercraft.gif"alt="infographie animee" >
             </div>
 
             <!--<div class="prevLeftSecond">
@@ -307,9 +315,9 @@
                 <!--<div class="col-12 containercontact d-flex justify-content-end">-->
                 <div class="gridcontainer">
                     <div><p><ul>
-                            <li><img class="listicon"src="icons/telephone.png" alt="icon" wight="40" height="40">33(0)6 63 08 33 16</li>
-                            <li><img class="listicon"src="icons/mailicon.png" alt="icon" wight="30" height="30">digregorio.cl@caramail.com</li>
-                            <li><img class="listicon"src="icons/Localisation.png" alt="icon" wight="40" height="40">329 rue de la pioulaz 73490 La Ravoire</li>
+                            <li><img class="listicon"src="./icons/telephone.png" alt="icon" wight="40" height="40">33(0)6 63 08 33 16</li>
+                            <li><img class="listicon"src="./icons/mailicon.png" alt="icon" wight="30" height="30">digregorio.cl@caramail.com</li>
+                            <li><img class="listicon"src="./icons/Localisation.png" alt="icon" wight="40" height="40">329 rue de la pioulaz 73490 La Ravoire</li>
                         </ul></p></div>
 
                     <div>
@@ -325,7 +333,7 @@
                             <label for="subject">Message</label>
                             <textarea class="cap" id="subject" name="subject" placeholder="Votre texte ici :)"></textarea>
 
-                            <input type="submit" value="Submit">
+                            <span><input type="submit" value="GO !"></span>
                             </form>
                     </div>
                 </div>
