@@ -1,15 +1,31 @@
-header {
-  background: url("image/home photo2.jpg");
+.bg {
+  background-image: url("./image/home photoo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  height: 100%;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  height: 670px;
 }
 
 @font-face {
-  font-family: "Cocogoose Pro", "Lato";
-  src: url("font/Cocogoose Pro Light-trial.ttf");
-  src: url("font/Lato-Regular.ttf");
+  font-family: "Cocogoose Pro";
+  src: url("./font/Cocogoose Pro Light-trial.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./font/Lato-Regular.ttf");
 }
 h1, h2, p, .titre {
-  font-family: "Cocogoose", "Segoe UI", "Lato", Tahoma, "Geneva";
+  font-family: "Cocogoose Pro", "Segoe UI", "Lato", Tahoma, "Geneva";
 }
 
 #logo {
@@ -17,7 +33,7 @@ h1, h2, p, .titre {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 90vw;
+  width: 90vw;
 }
 
 .cls-1 {
@@ -128,9 +144,8 @@ a:hover {
 h1, h2 {
   display: flex;
   justify-content: flex-start;
-  font-size: 50px;
   color: #7e7c7c;
-  font-family: "Cocogoose", "Segoe UI", "Lato", Tahoma, "Geneva";
+  font-family: "Cocogoose Pro", "Segoe UI", "Lato", Tahoma, "Geneva";
   text-shadow: 2px 0px #ffffff;
 }
 
@@ -139,14 +154,14 @@ h2 {
 }
 
 .titreheader {
-  padding: 40px;
+  padding: 60px 40px 0px;
   position: absolute;
   bottom: 10px;
   left: 30px;
 }
 
 .cv {
-  font-family: "Cocogoose", "Segoe UI", "Lato", Tahoma, "Geneva";
+  font-family: "Cocogoose Pro", "Segoe UI", "Lato", Tahoma, "Geneva";
   display: flex;
   justify-content: flex-end;
 }
@@ -166,7 +181,7 @@ h2 {
   border: solid;
   border-radius: 0.5rem;
   background-color: transparent;
-  font-family: "Cocogoose", Lato, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Cocogoose Pro", "Segoe UI", "Lato", Tahoma, "Geneva";
   font-size: 1.5rem;
   white-space: nowrap;
   text-decoration: none !important;
@@ -183,7 +198,7 @@ h2 {
   border-radius: 0.25rem;
   background: transparent;
   color: white;
-  font-family: system-ui, sans-serif;
+  font-family: "Cocogoose Pro", "Segoe UI", "Lato", Tahoma, "Geneva";
   font-size: 1rem;
   line-height: 1.2;
   white-space: nowrap;
@@ -314,7 +329,7 @@ h2 {
 }
 
 .competences {
-  background-color: #272727;
+  background-color: #fad27b;
   display: flex;
   flex-flow: row wrap;
   padding-top: 40px;
@@ -350,10 +365,11 @@ h2 {
 
 .little {
   padding-left: 50px;
+  font-family: "Lato";
 }
 
 .carousel img {
-  width: 350px;
+  width: 250px;
 }
 
 .imagecover {
@@ -362,7 +378,7 @@ h2 {
 }
 
 footer {
-  background-color: #272727;
+  background-color: indianred;
 }
 
 * {
@@ -403,8 +419,17 @@ label {
 }
 
 .formulaire {
-  height: 600px;
-  width: 400px;
+  width: 500px;
+}
+
+#subject {
+  height: 150px;
+}
+
+#in {
+  color: white;
+  text-shadow: none;
+  text-decoration: underline;
 }
 
 .titrefooter {
@@ -416,7 +441,7 @@ label {
 }
 
 .copy {
-  color: grey;
+  color: #413b3b;
   text-align: center;
   font-family: "lato";
 }
@@ -446,6 +471,11 @@ ul {
   grid-gap: 50px;
 }
 
+@media only screen and (min-width: 1600px) {
+  header {
+    height: 950px;
+  }
+}
 @media only screen and (max-width: 768px) {
   h1, h2, .titreRealisation {
     font-size: 30px;
@@ -469,6 +499,14 @@ ul {
 
   .allicons {
     display: block;
+  }
+
+  header {
+    height: 800px;
+  }
+
+  .formulaire {
+    width: 400px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -494,5 +532,24 @@ ul {
 
   .gridcontainer {
     grid-template-columns: none;
+  }
+
+  .parallax {
+    display: none;
+  }
+
+  .buttoncv {
+    display: flex;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  header {
+    height: 600px;
+  }
+
+  .formulaire {
+    width: 300px;
   }
 }
